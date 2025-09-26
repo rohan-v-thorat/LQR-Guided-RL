@@ -1,0 +1,409 @@
+<!<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>PRDP (ICLR 2025) - Progressively Refined Differentiable Physics - Project Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="static/css/academicons.min.css">
+        <link rel="stylesheet" href="static/css/fontawesome.min.css">
+        <script src="static/js/all.min.js"></script>
+        <script src="static/js/bulma-carousel.min.js"></script>
+
+
+        <link rel="stylesheet" href="static/css/style.css">
+        <script src="static/js/script.js"></script>
+        <!-- Adding latex equations support -->
+        <script>
+            MathJax = {
+              tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+              svg: { fontCache: 'global' }
+            };
+        </script>
+        <script id="MathJax-script" async 
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    </head>
+
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                    <a class="navbar-item" href="https://github.com/kanishkbh">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            More Research
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="https://ge.in.tum.de/publications/">
+                                TUM Thuerey Group
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- HEADER -->
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <h1 class="title is-1 is-size-3-mobile publication-title">PRDP: Progressively Refined Differentiable Physics</h1>
+                            <h2 class="subtitle is-4 opacity-1" style="margin-top: 1rem;opacity:0.7">ICLR 2025</h2>
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">
+                                    <a href="https://github.com/kanishkbh">Kanishk Bhatia</a>,</span>
+                                <span class="author-block">
+                                    <a href="https://fkoehler.site/"> Felix Köhler</a>,</span>
+                                <span class="author-block">
+                                    <a href="https://ge.in.tum.de/about/n-thuerey/">
+                                        Nils Thuerey</a>
+                                </span>
+                            </div>
+
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">Technical University of Munich</span>
+                            </div>
+
+                            <div class="column has-text-centered">
+                                <div class="publication-links">
+                                    <!-- PDF Link. -->
+                                    <span class="link-block">
+                                        <a href="https://arxiv.org/pdf/2502.19611"
+                                            class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </span>
+                                            <span>Paper</span>
+                                        </a>
+                                    </span>
+                                    <!-- arXiv link -->
+                                    <span class="link-block">
+                                        <a href="https://arxiv.org/abs/2502.19611"
+                                            class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="ai ai-arxiv"></i>
+                                            </span>
+                                            <span>arXiv</span>
+                                        </a>
+                                    </span>
+                                    <!-- code repo link -->
+                                    <span class="link-block">
+                                        <a href="https://github.com/tum-pbs/PRDP/"
+                                            class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                            <span>Code</span>
+                                        </a>
+                                    </span>
+                                    <!-- Dataset Link. -->
+                                    <!-- <span class="link-block">
+                                        <a href="https://huggingface.co/datasets/thuerey-group/apebench-scraped"
+                                            class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="far fa-images"></i>
+                                            </span>
+                                            <span>Dataset</span>
+                                        </a>
+                                    </span> -->
+                                    <!-- Poster Link. -->
+                                    <span class="link-block">
+                                        <a href="https://github.com/kanishkbh/prdp-paper/blob/main/docs/static/PRDP_Poster_v2.pdf"
+                                            class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fas fa-newspaper"></i>
+                                            </span>
+                                            <span>Poster</span>
+                                        </a>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="hero teaser is-light">
+            <div class="hero-body">
+                <div class="container">
+                    <div id="teaser">
+                        <img src="static/img/teaser_new_transparant.png"/>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="section">
+            <div class="container is-max-desktop is-mobile">
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <h1 class="title is-3">What is the problem we aimed to solve?</h1>
+                        <h2 class="title is-5">But first, what is differentiable physics, and why should I care?</h2>
+                        <div class="content has-text-justified">
+                            Differentiable physics refers to physics solvers written in frameworks that are <b>automatic differentiation (autodiff) friendly</b>, i.e.,
+                            using autodiff, we can easily compute Jacobians of these solvers. For the uninitiated - autodiff is the algorithm of gradient computation underlying 
+                            most modern gradient-based optimization, especially neural network training. 
+                            <br>
+                            <br>
+                            Then the big idea is - 
+                            through the  gradient, the learning pipeline "interacts" with the physics of the problem. 
+                            This interaction allows machine learning models that incorporate physical laws (rather than pure data-driven learning).
+
+
+                            <!-- This enables the integration of physics-based models in machine learning frameworks, 
+                            allowing gradient-based optimization techniques to train models that incorporate physical laws.  -->
+                            <br>
+                            <br>
+                            Differentiable physics is but one of the several methods enabling physics-aware models.
+                            Some examples where it has been successful:
+                            <ul>
+                                <li>Solving inverse problems (<a href="https://link.springer.com/book/10.1007/978-3-662-05086-6">Bendsoe & Sigmund, 2013)</a></li>
+                                <li>Integrating physical constraints (<a href="https://doi.org/10.1016/j.jcp.2018.10.045">Raissi et al., 2019</a>; <a href="https://doi.org/10.1145/3648506">Li et al., 2024</a></li>
+                                <li>Creating hybrid models that blend classical numerical techniques with learned components (<a href="https://arxiv.org/abs/2007.00016">Um et al., 2020</a>; <a href="https://arxiv.org/abs/2102.01010">Kochkov et al., 2021</a>; <a href="https://arxiv.org/abs/2311.07222">2024</a>)</li>
+                            </ul>
+                            
+                        </div>
+                        
+                        <h2 class="title is-5">Differentiable Physics sounds great! What's the problem?</h2>
+                        <div>
+                            Physics solvers are typically iterative. 
+                            Consider a heat diffusion equation, discretized in space using the finite volumes method.
+                            This forms a sparse linear system solved using an iterative solver e.g. Jacobi, GMRES, etc. 
+                            <br>
+                            Repeatedly querying a solver with several iterations in
+                            the forward pass - and differentiating through its iterations in the backward pass - 
+                            can introduces a severe computational bottleneck during training. See figure 1.
+                        </div>
+                        <div class="column is-centered">
+                            <img src="static/img/physics_bottleneck.png" alt="solver-in-the-loop physics bottleneck" style="width: 100%;"/>
+                            <p class="caption has-text-centered">Figure 1: 
+                                A typical neural correction-learning pipeline (<a href="https://arxiv.org/abs/2007.00016">Um et al., 2020</a>) 
+                                that uses a differentiable physics solver $\mathcal{P}_K$ in the loop. 
+                                Black arrows show the forward pass, grey dashed arrows represent the backward pass, and elements in red represent 
+                                the bottleneck. 
+                                As the number of solver iterations $K$ grows, the cost of passes through $\mathcal{P}_K$ becomes severe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop is-mobile">
+                <!-- TL;DR. -->
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">That's a problem! So what is PRDP?</h2>
+                        <div class="content has-text-justified">
+                            We often train models using differentiable physics at our research group, and it's costly!
+                            So, in the summer of 2024, we set out to devise a method that makes this training cheaper (hence, faster)
+                            but doesn't need fancy (read: difficult) method implementations from the user. 
+                            Enter: <b>P</b>rogressively <b>R</b>efined <b>D</b>ifferentiable <b>P</b>hysics (PRDP).
+                            <br>
+                        </div>
+                        <div class="column is-centered">
+                            <img src="static/img/prdp_idea.svg" alt="PRDP idea" style="width: 100%; max-width: 500px;"/>
+                            <p class="caption has-text-centered">Figure 2: The PRDP idea.
+                        </div>
+                        <div class="content has-text-justified">
+                            PRDP works by letting the learning algorithm use 
+                            cheap low-accuracy runs of the physics solver in the beginning, and adaptively refines the physics
+                            as the epochs progress (1). The method also prevents superfluous refinement of the physics solver, 
+                            based on our observation that full convergence of the physics is not necessary - 
+                            neural emulators, even when trained through incompletely (but sufficiently) converged physics,
+                            perform as well as their counterparts trained through fully-converged physics (2).
+                            <br>
+                            These two ideas - (1) and (2) - are henceforth referred to as 
+                            <b>P</b>rogressive <b>R</b>efinement (PR) and <b>I</b>ncomplete <b>C</b>onvergence (IC).
+                            <br>
+                        </div>
+                        <div class="column is-centered">
+                            <img src="static/img/teaser_ns_spatial_sep27_time.png" alt="PRDP Teaser" style="width: 100%;"/>
+                            <p class="caption has-text-centered">Figure 2: <b>PRDP</b> reduces the training time of neural
+                                networks containing numerical solver components (c). The fidelity of iterative components is 
+                                increased only if validation metrics of the network training plateau. This leads to savings by using fewer iterations in the
+                                beginning (<b>PR savings</b> in (b)) and by ending at a refinement level significantly below full fidelity
+                                (<b>IC savings</b> in (b)). The achieved validation error is identical (a).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="container is-max-desktop is-mobile">
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Sweet! How does PRDP work?</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                                PRDP's core idea revolves around balancing the compute-accuracy trade-off of iterative physics solvers.
+                                The nuancy is - we assert only the accuracy of the neural network being trained, not the physics solver.
+                                Hence, the physics solver is not converged to numerical precision, 
+                                but is allowed to run only for about as many iterations as sufficient
+                                to gain significant training progress in the neural network.
+                            </p>
+                            <p>
+                                <b>How much physics refinement is sufficient?</b>  <br>  
+                                We contribute an algorithm that determines physics refinement adaptively 
+                                based on the plateauing of training progress measured on a validation metric.
+                                <ul>
+                                    <li>Training begins with cheap coarse physics. </li>
+                                    <li>When the training progress stagnates, a refinement of the physics is invoked.</li>
+                                    <li>If the training progress has stangated over successive physics refinements, indicating
+                                        that further physics refinement would be superfluous, refinement is stopped.</li>
+                                </ul>
+                                
+                            </p>
+                            <div class="column is-centered"></div>
+                                <img src="static/img/prdp_explainer.svg" alt="PRDP Explainer Flowchart" style="width: 100%;"/>
+                                <p class="caption has-text-centered">Figure 3: 
+                                    Left: the typical training progress of a neural network supported by PRDP. 
+                                    Right: a simplified flowchart representation of the PRDP control algorithm.</p>
+                            </div>
+                            <p>
+                                This throttling of the physics solver saves significant compute, especially in cases where 
+                                 physics represents a high proportion of the training cost. For instance, in our test problem of training a 
+                                neural emulator on a 3D heat equation solver, PRDP saves about 78% in total training time.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop is-mobile">
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">I'm sold. How can I use PRDP?</h2>
+                        <div class="content has-text-justified">
+                            Be sure to check out the code examples in our <a href="https://github.com/tum-pbs/PRDP/">GitHub repository</a>
+                            <br>
+                            Using PRDP involves integrating it into your existing machine learning pipeline that includes a physics solver. 
+                            Obtain the file <tt>prdp.py</tt> from the code repo. The <tt>should_refine</tt> function implements the PRDP control algorithm 
+                            and needs to be imported in your code.
+                            Here are the steps to get started:
+                            <ol>
+                                <li><b>Identify the Physics Solver $\mathcal{P}$ in your learning pipeline.</b> 
+                                    Typically Physics solvers have at their core an iterative fixed-point algorithm $\Phi$. 
+                                    This is the one who's convergence we throttle using PRDP during the learning process.</li>
+                                <li><b>Decide the parameter that determines solver refinement:</b> 
+                                    number of iterations $K$, or tolerance (the arguments called <tt>abstol</tt> and <tt>reltol</tt> in most solver implementations). We use number of iterations in this demonstration.</li>
+                                <li><b>Record Validation metric:</b> 
+                                    Create an array that records the validation loss (or training loss) of the last $\delta$ epochs.
+                                    While training loss can be used, we recommend using the validation loss. 
+                                    Refer <a href="https://arxiv.org/pdf/2502.19611#subsection.G.4">appendix G.4 of the paper</a> for the explanation.</li>
+                                <li><b>Monitor Convergence:</b> Implement a mechanism to monitor the convergence of the physics solver and stop refinement when sufficient accuracy is achieved for training.</li>
+                                <li><b>Integrate with Training Loop:</b>
+                                    At the end of the first update step, using the <tt>should_refine</tt> function, determine whether the physics is to be refined.
+                                    If yes, refine the physics by incrementing the number of solver iterations $K$.
+                                    Refer the code below.
+                                    .</li>
+                                <li><b>Experiment and Tune:</b> 
+                                    The parameters <tt>stepping_threshold</tt> and <tt>nmax_threshold</tt> control the speed of progressive refinement
+                                    and the strictness on incomplete convergence, respectively.
+                                    A lower value of <tt>stepping_threshold</tt> enables faster refinement. This leads to potentially lower savings, 
+                                    but can also give faster training progress.
+                                    <!-- A lower value of <tt>nmax_threshold</tt> ... -->
+                                    While the default parameter values are expected to work reasonably well in most cases, the user is encouraged to experiment with different values.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container is-max-desktop is-mobile">
+                <!-- Abstract. -->
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            The physics solvers employed for neural network training are primarily iterative, 
+                            and hence, differentiating through them introduces a severe computational
+                            burden as iterations grow large. Inspired by works in bilevel optimization, we
+                            show that full accuracy of the network is achievable through physics significantly
+                            coarser than fully converged solvers. 
+                            We propose <b>P</b>rogressively <b>R</b>efined <b>D</b>ifferentiable <b>P</b>hysics (PRDP), 
+                            an approach that identifies the level of physics refinement
+                            sufficient for full training accuracy. By beginning with coarse physics, adaptively
+                            refining it during training, and stopping refinement at the level adequate for 
+                            training, it enables significant compute savings without sacrificing network accuracy.
+                            Our focus is on differentiating iterative linear solvers for sparsely discretized 
+                            differential operators, which are fundamental to scientific computing. PRDP is 
+                            applicable to both unrolled and implicit differentiation. We validate its performance
+                            on a variety of learning scenarios involving differentiable physics solvers such as
+                            inverse problems, autoregressive neural emulators, and correction-based neural-
+                            hybrid solvers. In the challenging example of emulating the Navier-Stokes equations, 
+                            we reduce training time by 62%.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+                <h2 class="title">BibTeX</h2>
+                <pre><code>
+@article{bhatia2025prdp,
+    title={Progressively Refined Differentiable Physics},
+    author={Kanishk Bhatia and Felix Koehler and Nils Thuerey},
+    journal={International Conference on Learning Representations (ICLR)},
+    volume={13},
+    year={2025}
+}
+                </code></pre>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <a class="icon-link" href="https://arxiv.org/pdf/2502.19611">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                    <a class="icon-link" href="https://github.com/kanishkbh" class="external-link" disabled>
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+                            <p>
+                                Website source code borrowed from <a href="https://keunhong.com">Keunhong Park</a>'s <a
+                                    href="https://github.com/nerfies/nerfies.github.io">Nerfies website</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    </html>
