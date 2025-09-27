@@ -32,6 +32,5 @@ This project implements a reinforcement learning (RL) based vibration control sy
  
 * LQR-Guided RL code/plots/: Directory storing the results obtained from testing.
 
-
 ## Citation
 If you use this repository or code in your research, please cite our paper:
