@@ -3,7 +3,7 @@
 # LQR-Guided RL
 This repository contains the code used to produce the results presented in the ICCMS 2025 paper titled **"Safe Reinforcement Learning-Based Vibration Control: Overcoming Training Risks with LQR Guidance"**.
 
-To visit the website verion of this paper please click [here](https://rohan-v-thorat.github.io/LQR-Guided-RL/). 
+To visit the website version of this paper please click [here](https://rohan-v-thorat.github.io/LQR-Guided-RL/). 
 
 ## Overview
 This project implements a reinforcement learning (RL) based vibration control system guided by Linear Quadratic Regulator (LQR) principles. The main objective is to achieve safe and effective control in vibration systems by integrating classical LQR control insights into the RL policy training process.
