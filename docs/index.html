@@ -179,7 +179,10 @@
                         </div>
                         This method opens practical paths for safe, model-free vibration control in real-time applications where training risks are a major concern.
                         <br>
-                        [ADD LQR-Guided RL image]
+                        <div class="column is-centered" id="Fig1" align ="middle">
+                            <img src="static/img/LQR-Guided-RL.svg" alt="PRDP idea" style="width: 100%; max-width: 500px;"/>
+                            <p class="caption has-text-centered">Figure 1: Overview of the LQR-Guided Reinforcement Learning framework: a classical spring-mass-damper system is controlled using a methodology that integrates Linear Quadratic Regulator (LQR) guidance within a reinforcement learning paradigm, leveraging both analytical control theory and data-driven learning.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -190,37 +193,28 @@
                 <!-- TL;DR. -->
                 <div class="columns is-centered">
                     <div class="column is-four-fifths">
-                        <h2 class="title is-3">Result (add only training and testing result of LQR-Guided RL)</h2>
-                        <div class="content has-text-justified">
-                            We often train models using differentiable physics at our research group, and it's costly!
-                            So, in the summer of 2024, we set out to devise a method that makes this training cheaper (hence, faster)
-                            but doesn't need fancy (read: difficult) method implementations from the user. 
-                            Enter: <b>P</b>rogressively <b>R</b>efined <b>D</b>ifferentiable <b>P</b>hysics (PRDP).
-                            <br>
+                        <h1 class="title is-3">LQR-Guided RL performance</h1>
+                        [Mention the nonlinear equation and the linear equation]
+                        <h2 class="title is-5">Training phase</h2>
+                            To assess the effectiveness of the proposed approach, the acceleration response 
+                            of the dynamical system during the training phase is compared between the LQR-guided 
+                            reinforcement learning (RL) policy and the non-guided RL policy. As shown in 
+                            Figure <a href="#Fig2">[2]</a>, the incorporation of the LQR prior leads 
+                            to a significantly reduced acceleration response relative to the non-guided RL policy. 
+                        <div class="column is-centered" id="Fig2" align ="middle">
+                            <img src="static/img/LQR_Guided_RL_training.png" alt="PRDP idea" style="width: 100%; max-width: 500px;"/>
+                            <p class="caption has-text-centered">Figure 2: Comparison of acceleration response during training of RL controller and LQR-Guided RL controller
                         </div>
-                        <div class="column is-centered">
-                            <img src="static/img/prdp_idea.svg" alt="PRDP idea" style="width: 100%; max-width: 500px;"/>
-                            <p class="caption has-text-centered">Figure 2: The PRDP idea.
-                        </div>
-                        <div class="content has-text-justified">
-                            PRDP works by letting the learning algorithm use 
-                            cheap low-accuracy runs of the physics solver in the beginning, and adaptively refines the physics
-                            as the epochs progress (1). The method also prevents superfluous refinement of the physics solver, 
-                            based on our observation that full convergence of the physics is not necessary - 
-                            neural emulators, even when trained through incompletely (but sufficiently) converged physics,
-                            perform as well as their counterparts trained through fully-converged physics (2).
-                            <br>
-                            These two ideas - (1) and (2) - are henceforth referred to as 
-                            <b>P</b>rogressive <b>R</b>efinement (PR) and <b>I</b>ncomplete <b>C</b>onvergence (IC).
-                            <br>
-                        </div>
-                        <div class="column is-centered">
-                            <img src="static/img/teaser_ns_spatial_sep27_time.png" alt="PRDP Teaser" style="width: 100%;"/>
-                            <p class="caption has-text-centered">Figure 2: <b>PRDP</b> reduces the training time of neural
-                                networks containing numerical solver components (c). The fidelity of iterative components is 
-                                increased only if validation metrics of the network training plateau. This leads to savings by using fewer iterations in the
-                                beginning (<b>PR savings</b> in (b)) and by ending at a refinement level significantly below full fidelity
-                                (<b>IC savings</b> in (b)). The achieved validation error is identical (a).</p>
+                        <h2 class="title is-5">Testing phase</h2>
+                            The LQR-guided RL policy and the standalone LQR policy are tested on the true 
+                            nonlinear system. As illustrated in Figure <a href="#Fig3">[3]</a>, the 
+                            LQR-guided RL policy exhibits lower acceleration responses and requires reduced control 
+                            effort compared to the LQR policy. These results indicate that LQR guidance improves the 
+                            safety in the training process of the RL policy, and also, the trained RL policy achieves 
+                            superior performance compared to the standalone LQR policy.                        
+                        <div class="column is-centered" id="Fig3" align ="middle">
+                            <img src="static/img/LQR_Guided_RL_testing.png" alt="PRDP idea" style="width: 100%; max-width: 500px;"/>
+                            <p class="caption has-text-centered">Figure 3: Comparison of displacement, velocity, acceleration response and control force during testing for the case of LQR-Guided RL and LQR
                         </div>
                     </div>
                 </div>
