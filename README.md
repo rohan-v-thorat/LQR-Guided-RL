@@ -1,5 +1,3 @@
-[Note: Add animated plots, personal website for paper, add citation]
-
 # LQR-Guided RL
 This repository contains the code used to produce the results presented in the ICCMS 2025 paper titled **"Safe Reinforcement Learning-Based Vibration Control: Overcoming Training Risks with LQR Guidance"**.
 
