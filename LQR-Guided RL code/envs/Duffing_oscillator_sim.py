@@ -73,7 +73,7 @@ class DOS(gym.Env):
         ground_force = m*np.array([ground_acc])
 
         def CSSM(t, x, A_c, B_c, action, ground_force, nonlinear_para):
-            return matmul(A_c,x) + matmul(B_c,(action+ground_force)) + [0,-nonlinear_para*x[0]**3]
+            return matmul(A_c,x) + matmul(B_c,(action - ground_force)) + [0,-nonlinear_para*x[0]**3]
 
         sol = solve_ivp(CSSM, [0, dt], input[:,:2][0], args=(A_c, B_c, action, ground_force, nonlinear_para),t_eval=[dt])
 
