@@ -144,15 +144,14 @@
                         alternative, but direct deployment is hazardous because agent exploration during its training can be damaging.
                             
                         </div>
-                        <h1 class="title is-3">How can RL be trained safely on physical systems?</h1>
+                        <h1 class="title is-3">How can RL be trained safely on physical (true) systems?</h1>
                         <div class="content has-text-justified">
-                            We present a framework blending LQR policy guidance with Lyapunov actor-critic RL.
+                            We present a framework blending LQR policy guidance with RL.
 
                             <ul>
                                 <li>The LQR controller, designed from arbitrary model parameters, guides the RL agent during exploration, 
                                     ensuring safety without relying on perfect system identification.</li>
-                                <li>RL policies learn directly on physical systems using reward signals; LQR actions are linearly mixed for safe initialization.</li>    
-                                <li>Training progress and stability are monitored using estimated Lyapunov functions and measured system accelerations.</li>
+                                <li>RL policies learn directly on physical (true) systems using reward signals; LQR actions are linearly mixed for guidence.</li>    
                                 <li>Experiments demonstrate that the blended controller reduces training-time vibration compared to pure RL, and ultimately surpasses LQR in vibration suppression after learning, all while maintaining low control effort.</li>
                             </ul>
                             
@@ -173,8 +172,15 @@
                 <!-- TL;DR. -->
                 <div class="columns is-centered">
                     <div class="column is-four-fifths">
-                        <h1 class="title is-3">LQR-Guided RL performance</h1>
-                        [Mention the nonlinear equation and the linear equation]
+                        <h1 class="title is-3">Performance of LQR-Guided RL</h1>
+                        A LQR is designed based on assumed linear dynamical system whose parameters value are chosen arbitrary.
+                        This designed LQR is used to Guide the RL during its training and testing phase on a true system. The assumed system and true system (nonlinear)
+                        considered are as below:
+                        $$\text{Assumed system}\hspace{2em}1.6\ddot{x} - 0.5\dot{x} + 181x = u - 1.6\ddot{x}_{g}$$
+                        $$ \text{True system}\hspace{3em}\ddot{x} + 0.4\dot{x} + 100x + x^3= u - \ddot{x}^g$$
+                        where $x,u,\ddot{x}^g$ are the displacement, control force and ground acceleration respectively.
+                        <br>
+                        <br>
                         <h2 class="title is-5">Training phase</h2>
                             To assess the effectiveness of the proposed approach, the acceleration response 
                             of the dynamical system during the training phase is compared between the LQR-guided 

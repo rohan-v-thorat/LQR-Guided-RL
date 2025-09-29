@@ -70,7 +70,7 @@ class DOS(gym.Env):
         D_d = np.array([1/m])
       
         ground_acc = state[3]
-        ground_force = np.array([ground_acc])
+        ground_force = m*np.array([ground_acc])
 
         def CSSM(t, x, A_c, B_c, action, ground_force, nonlinear_para):
             return matmul(A_c,x) + matmul(B_c,(action+ground_force)) + [0,-nonlinear_para*x[0]**3]
