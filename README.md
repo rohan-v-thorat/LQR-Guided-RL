@@ -3,6 +3,8 @@ This repository contains the code used to produce the results presented in the I
 
 To visit the website version of this paper please click [here](https://rohan-v-thorat.github.io/LQR-Guided-RL/). 
 
+![Alt text](Generate-plots/figures/LQR-Guided-RL.svg)
+
 ## Overview
 This project implements a reinforcement learning (RL) based vibration control system guided by Linear Quadratic Regulator (LQR) principles. The main objective is to achieve safe and effective control in vibration systems by integrating classical LQR control insights into the RL policy training process.
 
