@@ -33,11 +33,12 @@ This project implements a reinforcement learning (RL) based vibration control sy
 * LQR-Guided RL code/plots/: Directory storing the results obtained from testing.
 
 ## Citation
-If you use this repository or code in your research, please cite our paper
-
+If you use this repository or code in your research, please cite our paper:
+```
 @article{thorat2025safe,
   title={Safe Reinforcement Learning-Based Vibration Control: Overcoming Training Risks with LQR Guidance},
   author={Thorat, Rohan Vitthal and Singh, Juhi and Nayek, Rajdip},
   journal={arXiv preprint arXiv:2510.01269},
   year={2025}
 }
+```
